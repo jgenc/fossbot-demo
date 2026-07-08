@@ -1,0 +1,1065 @@
+{
+  "id": "",
+  "title": "Demo",
+  "description": "Demo stage showcasing all capabilities.",
+  "createdAt": "2026-07-08T18:51:54.734Z",
+  "updatedAt": "2026-07-08T19:06:55.732Z",
+  "config": [
+    {
+      "type": "skybox",
+      "mode": "color",
+      "color": "#cbd5e1"
+    },
+    {
+      "type": "floor",
+      "dimensions": [
+        10,
+        10
+      ],
+      "material": {
+        "color": "#0062b1"
+      },
+      "name": "floor",
+      "texture": "",
+      "repeat": [
+        25,
+        25
+      ],
+      "offset": [
+        0,
+        0
+      ]
+    },
+    {
+      "type": "base",
+      "dimensions": [
+        0.5,
+        0.5
+      ],
+      "material": {
+        "color": "#43a047"
+      },
+      "position": [
+        -0.2,
+        -1.2
+      ],
+      "name": "target"
+    },
+    {
+      "type": "text",
+      "name": "target_label",
+      "text": "target",
+      "position": [
+        -0.2,
+        0.016,
+        -1.2
+      ],
+      "scale": 0.4,
+      "onFloor": true,
+      "color": "black",
+      "style": {
+        "backgroundVisible": true,
+        "backgroundColor": "#ffffff",
+        "backgroundOpacity": 0.9,
+        "borderVisible": true,
+        "borderColor": "#0f172a",
+        "borderWidth": 8,
+        "fontSize": 56
+      }
+    },
+    {
+      "type": "light",
+      "subtype": "point",
+      "position": [
+        -0.5,
+        1,
+        -0.1
+      ],
+      "color": "#fa28ff",
+      "intensity": 6.662,
+      "range": 4,
+      "name": "light copy copy copy"
+    },
+    {
+      "type": "cube",
+      "dimensions": [
+        1,
+        0.5,
+        0.1
+      ],
+      "material": {
+        "color": "#607d8b"
+      },
+      "position": [
+        -0.9,
+        0.225,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "name": "wall",
+      "castShadow": true,
+      "mass": 0,
+      "immovable": true
+    },
+    {
+      "type": "cube",
+      "dimensions": [
+        1,
+        0.5,
+        0.1
+      ],
+      "material": {
+        "color": "#cccccc"
+      },
+      "position": [
+        0.2,
+        0.225,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "name": "wall copy",
+      "castShadow": true,
+      "mass": 2.5,
+      "immovable": false
+    },
+    {
+      "type": "text",
+      "text": "Wall",
+      "position": [
+        0,
+        0.02,
+        0
+      ],
+      "color": "#ffffff",
+      "scale": 0.75,
+      "onFloor": false,
+      "attachment": {
+        "parentId": "stage_mrcfqlqf_f0chas0",
+        "face": "front",
+        "offset": [
+          0,
+          0
+        ],
+        "rotation": 0,
+        "billboard": false
+      },
+      "attach": {
+        "parentName": "wall",
+        "face": "front",
+        "offset": [
+          0,
+          0
+        ],
+        "rotation": 0
+      },
+      "style": {
+        "backgroundVisible": false,
+        "backgroundSize": [
+          0.75,
+          0.24
+        ],
+        "backgroundColor": "#ffffff",
+        "backgroundOpacity": 0.9,
+        "borderVisible": false,
+        "borderColor": "#0f172a",
+        "borderWidth": 8,
+        "fontSize": 56
+      },
+      "name": "text label"
+    },
+    {
+      "type": "text",
+      "text": "Movable Wall",
+      "position": [
+        0,
+        0.02,
+        0
+      ],
+      "color": "#ffffff",
+      "scale": 0.75,
+      "onFloor": false,
+      "attachment": {
+        "parentId": "stage_mrcfrd29_4j32r02",
+        "face": "front",
+        "offset": [
+          0,
+          0
+        ],
+        "rotation": 0,
+        "billboard": false
+      },
+      "attach": {
+        "parentName": "wall copy",
+        "face": "front",
+        "offset": [
+          0,
+          0
+        ],
+        "rotation": 0
+      },
+      "style": {
+        "backgroundVisible": false,
+        "backgroundSize": [
+          0.75,
+          0.24
+        ],
+        "backgroundColor": "#ffffff",
+        "backgroundOpacity": 0.9,
+        "borderVisible": false,
+        "borderColor": "#0f172a",
+        "borderWidth": 8,
+        "fontSize": 56
+      },
+      "name": "text label copy"
+    },
+    {
+      "type": "cube",
+      "dimensions": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "material": {
+        "color": "#f57c00"
+      },
+      "position": [
+        1.1,
+        0.1,
+        0.7
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "name": "block",
+      "castShadow": true,
+      "mass": 0,
+      "immovable": true
+    },
+    {
+      "type": "cube",
+      "dimensions": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "material": {
+        "color": "#f57c00"
+      },
+      "position": [
+        1.1,
+        0.15,
+        1.2
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "name": "block copy",
+      "castShadow": true,
+      "mass": 0.4,
+      "immovable": false
+    },
+    {
+      "type": "cube",
+      "dimensions": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "material": {
+        "color": "#f44e3b"
+      },
+      "position": [
+        1,
+        0.4,
+        1.2
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "name": "block copy copy",
+      "castShadow": true,
+      "mass": 0.4,
+      "immovable": false
+    },
+    {
+      "type": "cube",
+      "dimensions": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "material": {
+        "color": "#f44e3b"
+      },
+      "position": [
+        1.1,
+        0.4,
+        1.3
+      ],
+      "orientation": [
+        0,
+        0.7854,
+        0
+      ],
+      "name": "block copy copy copy",
+      "castShadow": true,
+      "mass": 0.4,
+      "immovable": false
+    },
+    {
+      "type": "cube",
+      "dimensions": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "material": {
+        "color": "#f44e3b"
+      },
+      "position": [
+        1.2,
+        0.4,
+        1.2
+      ],
+      "orientation": [
+        0,
+        0.7854,
+        0
+      ],
+      "name": "block copy copy copy copy",
+      "castShadow": true,
+      "mass": 0.4,
+      "immovable": false
+    },
+    {
+      "type": "light",
+      "subtype": "point",
+      "position": [
+        1.1,
+        1,
+        0.9
+      ],
+      "color": "#ffffff",
+      "intensity": 6.662,
+      "range": 4,
+      "name": "light copy copy"
+    },
+    {
+      "type": "light",
+      "subtype": "point",
+      "position": [
+        -2.2,
+        1,
+        2
+      ],
+      "color": "#0062b1",
+      "intensity": 16.4,
+      "range": 4,
+      "name": "light"
+    },
+    {
+      "type": "cube",
+      "dimensions": [
+        0.6,
+        0.01,
+        0.9
+      ],
+      "material": {
+        "color": "#ffb020"
+      },
+      "position": [
+        -2.5,
+        0.063,
+        1.1
+      ],
+      "orientation": [
+        1.5708,
+        1.423839603776974,
+        -1.5708
+      ],
+      "name": "ramp copy",
+      "castShadow": true,
+      "mass": 0,
+      "immovable": true
+    },
+    {
+      "type": "cube",
+      "dimensions": [
+        0.6,
+        0.01,
+        0.9
+      ],
+      "material": {
+        "color": "#ffb020"
+      },
+      "position": [
+        -2.4,
+        0.1,
+        1.9
+      ],
+      "orientation": [
+        1.5708,
+        1.277057413684251,
+        -1.5708
+      ],
+      "name": "ramp",
+      "castShadow": true,
+      "mass": 0,
+      "immovable": true
+    },
+    {
+      "type": "cube",
+      "dimensions": [
+        0.6,
+        0.01,
+        0.9
+      ],
+      "material": {
+        "color": "#f44e3b"
+      },
+      "position": [
+        -2.4,
+        0.2,
+        2.9
+      ],
+      "orientation": [
+        1.5708,
+        1.0472,
+        -1.5708
+      ],
+      "name": "ramp copy",
+      "castShadow": true,
+      "mass": 0,
+      "immovable": true
+    },
+    {
+      "type": "light",
+      "subtype": "point",
+      "position": [
+        0.1,
+        1,
+        3.4
+      ],
+      "color": "#e27300",
+      "intensity": 16.4,
+      "range": 4,
+      "name": "light copy"
+    },
+    {
+      "type": "sphere",
+      "dimensions": [
+        0.375
+      ],
+      "material": {
+        "color": "#0c797d"
+      },
+      "position": [
+        -0.3,
+        0.188,
+        3.4
+      ],
+      "name": "sphere",
+      "castShadow": true,
+      "mass": 0,
+      "immovable": true
+    },
+    {
+      "type": "sphere",
+      "dimensions": [
+        0.375
+      ],
+      "material": {
+        "color": "#653294"
+      },
+      "position": [
+        0.2,
+        0.188,
+        3.9
+      ],
+      "name": "sphere copy",
+      "castShadow": true,
+      "mass": 0.2,
+      "immovable": false
+    },
+    {
+      "type": "camera",
+      "position": [
+        2.5,
+        2,
+        3.3
+      ],
+      "rotationY": 1.014559894184304,
+      "pitch": 0.5433209961458348,
+      "fov": 50,
+      "name": "stage camera"
+    },
+    {
+      "type": "fossbot",
+      "position": [
+        -0.5,
+        0,
+        1.3
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "editor": {
+    "version": 2,
+    "groups": [
+      {
+        "id": "stage_mrcfvdc1_fo665a7",
+        "name": "block group",
+        "objectIds": [
+          "stage_mrcfsdim_rvnzc15",
+          "stage_mrcfsrc3_fhymka4",
+          "stage_mrcftede_10a0v4z",
+          "stage_mrcfufzc_f4szjr6",
+          "stage_mrcfuzqb_17lsrrs",
+          "stage_mrcg1xoe_i9gmlxq"
+        ],
+        "createdAt": "2026-07-08T18:56:25.153Z",
+        "updatedAt": "2026-07-08T19:01:58.343Z"
+      },
+      {
+        "id": "stage_mrcfvmxw_am2smyo",
+        "name": "wall group",
+        "objectIds": [
+          "stage_mrcg2jgn_9f06hi3",
+          "stage_mrcfqlqf_f0chas0",
+          "stage_mrcfrd29_4j32r02"
+        ],
+        "createdAt": "2026-07-08T18:56:37.604Z",
+        "updatedAt": "2026-07-08T19:02:04.156Z"
+      },
+      {
+        "id": "stage_mrcfwp8m_3xxtwt4",
+        "name": "ramp group",
+        "objectIds": [
+          "stage_mrcg0v1t_p78v1rm",
+          "stage_mrcfymh4_1zfq7yf",
+          "stage_mrcfvvul_v7le4ng",
+          "stage_mrcfxhfr_v8cqjc1"
+        ],
+        "createdAt": "2026-07-08T18:57:27.238Z",
+        "updatedAt": "2026-07-08T19:01:05.462Z"
+      },
+      {
+        "id": "stage_mrcg0hrq_0jcuvjk",
+        "name": "sphere group",
+        "objectIds": [
+          "stage_mrcg1eep_k0t75he",
+          "stage_mrcg03at_onto9vi",
+          "stage_mrcg0guw_9g92r1o"
+        ],
+        "createdAt": "2026-07-08T19:00:24.182Z",
+        "updatedAt": "2026-07-08T19:01:13.398Z"
+      }
+    ],
+    "validationOverrides": {},
+    "gridVisible": true,
+    "gridSize": 0.5,
+    "defaultSnapPreset": "fine",
+    "defaultRotationSnapPreset": "15",
+    "skybox": {
+      "mode": "color",
+      "color": "#cbd5e1"
+    },
+    "floor": {
+      "name": "floor",
+      "dimensions": [
+        10,
+        10
+      ],
+      "color": "#0062b1",
+      "texture": "",
+      "repeat": [
+        25,
+        25
+      ],
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "objects": [
+      {
+        "id": "stage_mrcfqezg_ao2eod9",
+        "kind": "fossbot",
+        "semanticKind": "robotSpawn",
+        "name": "robot spawn",
+        "position": [
+          -0.5,
+          0,
+          1.3
+        ],
+        "rotationY": 0
+      },
+      {
+        "id": "stage_mrcg45k9_53h7mpf",
+        "kind": "base",
+        "semanticKind": "target",
+        "name": "target",
+        "position": [
+          -0.2,
+          0,
+          -1.2
+        ],
+        "dimensions": [
+          0.5,
+          0.5
+        ],
+        "color": "#43a047"
+      },
+      {
+        "id": "stage_mrcg2jgn_9f06hi3",
+        "kind": "light",
+        "semanticKind": "light",
+        "name": "light copy copy copy",
+        "subtype": "point",
+        "position": [
+          -0.5,
+          1,
+          -0.1
+        ],
+        "rotationY": 0,
+        "color": "#fa28ff",
+        "intensity": 6.662,
+        "range": 4,
+        "angle": 0.5235987755982988,
+        "penumbra": 0.3,
+        "groupId": "stage_mrcfvmxw_am2smyo"
+      },
+      {
+        "id": "stage_mrcfqlqf_f0chas0",
+        "kind": "cube",
+        "semanticKind": "wall",
+        "name": "wall",
+        "position": [
+          -0.9,
+          0.225,
+          0
+        ],
+        "rotationY": 0,
+        "dimensions": [
+          1,
+          0.5,
+          0.1
+        ],
+        "color": "#607d8b",
+        "mass": 0,
+        "immovable": true,
+        "groupId": "stage_mrcfvmxw_am2smyo"
+      },
+      {
+        "id": "stage_mrcfrd29_4j32r02",
+        "kind": "cube",
+        "semanticKind": "wall",
+        "name": "wall copy",
+        "position": [
+          0.2,
+          0.225,
+          0
+        ],
+        "rotationY": 0,
+        "dimensions": [
+          1,
+          0.5,
+          0.1
+        ],
+        "color": "#cccccc",
+        "mass": 2.5,
+        "immovable": false,
+        "groupId": "stage_mrcfvmxw_am2smyo"
+      },
+      {
+        "id": "stage_mrcfqs4m_xq7e4lk",
+        "kind": "text",
+        "semanticKind": "label",
+        "name": "text label",
+        "text": "Wall",
+        "position": [
+          0,
+          0.02,
+          0
+        ],
+        "color": "#ffffff",
+        "scale": 0.75,
+        "onFloor": false,
+        "style": {
+          "backgroundVisible": false,
+          "backgroundSize": [
+            0.75,
+            0.24
+          ],
+          "backgroundColor": "#ffffff",
+          "backgroundOpacity": 0.9,
+          "borderVisible": false,
+          "borderColor": "#0f172a",
+          "borderWidth": 8,
+          "fontSize": 56
+        },
+        "parentId": "stage_mrcfqlqf_f0chas0",
+        "attachment": {
+          "parentId": "stage_mrcfqlqf_f0chas0",
+          "face": "front",
+          "offset": [
+            0,
+            0
+          ],
+          "rotation": 0,
+          "billboard": false
+        }
+      },
+      {
+        "id": "stage_mrcfrd29_may2of3",
+        "kind": "text",
+        "semanticKind": "label",
+        "name": "text label copy",
+        "text": "Movable Wall",
+        "position": [
+          0,
+          0.02,
+          0
+        ],
+        "color": "#ffffff",
+        "scale": 0.75,
+        "onFloor": false,
+        "style": {
+          "backgroundVisible": false,
+          "backgroundSize": [
+            0.75,
+            0.24
+          ],
+          "backgroundColor": "#ffffff",
+          "backgroundOpacity": 0.9,
+          "borderVisible": false,
+          "borderColor": "#0f172a",
+          "borderWidth": 8,
+          "fontSize": 56
+        },
+        "parentId": "stage_mrcfrd29_4j32r02",
+        "attachment": {
+          "parentId": "stage_mrcfrd29_4j32r02",
+          "face": "front",
+          "offset": [
+            0,
+            0
+          ],
+          "rotation": 0,
+          "billboard": false
+        }
+      },
+      {
+        "id": "stage_mrcfsdim_rvnzc15",
+        "kind": "cube",
+        "semanticKind": "block",
+        "name": "block",
+        "position": [
+          1.1,
+          0.1,
+          0.7
+        ],
+        "rotationY": 0,
+        "dimensions": [
+          0.3,
+          0.3,
+          0.3
+        ],
+        "color": "#f57c00",
+        "mass": 0,
+        "immovable": true,
+        "groupId": "stage_mrcfvdc1_fo665a7"
+      },
+      {
+        "id": "stage_mrcfsrc3_fhymka4",
+        "kind": "cube",
+        "semanticKind": "block",
+        "name": "block copy",
+        "position": [
+          1.1,
+          0.15,
+          1.2
+        ],
+        "rotationY": 0,
+        "dimensions": [
+          0.3,
+          0.3,
+          0.3
+        ],
+        "color": "#f57c00",
+        "mass": 0.4,
+        "immovable": false,
+        "groupId": "stage_mrcfvdc1_fo665a7"
+      },
+      {
+        "id": "stage_mrcftede_10a0v4z",
+        "kind": "cube",
+        "semanticKind": "block",
+        "name": "block copy copy",
+        "position": [
+          1,
+          0.4,
+          1.2
+        ],
+        "rotationY": 0,
+        "dimensions": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "color": "#f44e3b",
+        "mass": 0.4,
+        "immovable": false,
+        "groupId": "stage_mrcfvdc1_fo665a7"
+      },
+      {
+        "id": "stage_mrcfufzc_f4szjr6",
+        "kind": "cube",
+        "semanticKind": "block",
+        "name": "block copy copy copy",
+        "position": [
+          1.1,
+          0.4,
+          1.3
+        ],
+        "rotationY": 0.7854,
+        "dimensions": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "color": "#f44e3b",
+        "mass": 0.4,
+        "immovable": false,
+        "groupId": "stage_mrcfvdc1_fo665a7"
+      },
+      {
+        "id": "stage_mrcfuzqb_17lsrrs",
+        "kind": "cube",
+        "semanticKind": "block",
+        "name": "block copy copy copy copy",
+        "position": [
+          1.2,
+          0.4,
+          1.2
+        ],
+        "rotationY": 0.7854,
+        "dimensions": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "color": "#f44e3b",
+        "mass": 0.4,
+        "immovable": false,
+        "groupId": "stage_mrcfvdc1_fo665a7"
+      },
+      {
+        "id": "stage_mrcg1xoe_i9gmlxq",
+        "kind": "light",
+        "semanticKind": "light",
+        "name": "light copy copy",
+        "subtype": "point",
+        "position": [
+          1.1,
+          1,
+          0.9
+        ],
+        "rotationY": 0,
+        "color": "#ffffff",
+        "intensity": 6.662,
+        "range": 4,
+        "angle": 0.5235987755982988,
+        "penumbra": 0.3,
+        "groupId": "stage_mrcfvdc1_fo665a7"
+      },
+      {
+        "id": "stage_mrcg0v1t_p78v1rm",
+        "kind": "light",
+        "semanticKind": "light",
+        "name": "light",
+        "subtype": "point",
+        "position": [
+          -2.2,
+          1,
+          2
+        ],
+        "rotationY": 0,
+        "color": "#0062b1",
+        "intensity": 16.4,
+        "range": 4,
+        "angle": 0.5235987755982988,
+        "penumbra": 0.3,
+        "groupId": "stage_mrcfwp8m_3xxtwt4"
+      },
+      {
+        "id": "stage_mrcfymh4_1zfq7yf",
+        "kind": "cube",
+        "semanticKind": "ramp",
+        "name": "ramp copy",
+        "position": [
+          -2.5,
+          0.063,
+          1.1
+        ],
+        "rotationY": 1.423839603776974,
+        "orientation": [
+          1.5708,
+          1.423839603776974,
+          -1.5708
+        ],
+        "rampAngle": 1.5708,
+        "dimensions": [
+          0.6,
+          0.01,
+          0.9
+        ],
+        "color": "#ffb020",
+        "mass": 0,
+        "immovable": true,
+        "groupId": "stage_mrcfwp8m_3xxtwt4"
+      },
+      {
+        "id": "stage_mrcfvvul_v7le4ng",
+        "kind": "cube",
+        "semanticKind": "ramp",
+        "name": "ramp",
+        "position": [
+          -2.4,
+          0.1,
+          1.9
+        ],
+        "rotationY": 1.277057413684251,
+        "orientation": [
+          1.5708,
+          1.277057413684251,
+          -1.5708
+        ],
+        "rampAngle": 1.5708,
+        "dimensions": [
+          0.6,
+          0.01,
+          0.9
+        ],
+        "color": "#ffb020",
+        "mass": 0,
+        "immovable": true,
+        "groupId": "stage_mrcfwp8m_3xxtwt4"
+      },
+      {
+        "id": "stage_mrcfxhfr_v8cqjc1",
+        "kind": "cube",
+        "semanticKind": "ramp",
+        "name": "ramp copy",
+        "position": [
+          -2.4,
+          0.2,
+          2.9
+        ],
+        "rotationY": 1.0472,
+        "orientation": [
+          1.5708,
+          1.0472,
+          -1.5708
+        ],
+        "rampAngle": 1.5708,
+        "dimensions": [
+          0.6,
+          0.01,
+          0.9
+        ],
+        "color": "#f44e3b",
+        "mass": 0,
+        "immovable": true,
+        "groupId": "stage_mrcfwp8m_3xxtwt4"
+      },
+      {
+        "id": "stage_mrcg1eep_k0t75he",
+        "kind": "light",
+        "semanticKind": "light",
+        "name": "light copy",
+        "subtype": "point",
+        "position": [
+          0.1,
+          1,
+          3.4
+        ],
+        "rotationY": 0,
+        "color": "#e27300",
+        "intensity": 16.4,
+        "range": 4,
+        "angle": 0.5235987755982988,
+        "penumbra": 0.3,
+        "groupId": "stage_mrcg0hrq_0jcuvjk"
+      },
+      {
+        "id": "stage_mrcg03at_onto9vi",
+        "kind": "sphere",
+        "semanticKind": "sphere",
+        "name": "sphere",
+        "position": [
+          -0.3,
+          0.188,
+          3.4
+        ],
+        "dimensions": [
+          0.375
+        ],
+        "color": "#0c797d",
+        "mass": 0,
+        "immovable": true,
+        "groupId": "stage_mrcg0hrq_0jcuvjk"
+      },
+      {
+        "id": "stage_mrcg0guw_9g92r1o",
+        "kind": "sphere",
+        "semanticKind": "sphere",
+        "name": "sphere copy",
+        "position": [
+          0.2,
+          0.188,
+          3.9
+        ],
+        "dimensions": [
+          0.375
+        ],
+        "color": "#653294",
+        "mass": 0.2,
+        "immovable": false,
+        "groupId": "stage_mrcg0hrq_0jcuvjk"
+      },
+      {
+        "id": "stage_mrcg33ml_x8dpyze",
+        "kind": "camera",
+        "semanticKind": "camera",
+        "name": "stage camera",
+        "position": [
+          2.5,
+          2,
+          3.3
+        ],
+        "rotationY": 1.014559894184304,
+        "pitch": 0.5433209961458348,
+        "fov": 50
+      }
+    ]
+  }
+}
