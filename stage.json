@@ -3,7 +3,7 @@
   "title": "Demo",
   "description": "Demo stage showcasing all capabilities.",
   "createdAt": "2026-07-08T18:51:54.734Z",
-  "updatedAt": "2026-07-08T19:06:55.732Z",
+  "updatedAt": "2026-07-08T20:01:18.788Z",
   "config": [
     {
       "type": "skybox",
@@ -72,38 +72,39 @@
       "subtype": "point",
       "position": [
         -0.5,
-        1,
+        1.6,
         -0.1
       ],
-      "color": "#fa28ff",
-      "intensity": 6.662,
+      "color": "#ffffff",
+      "intensity": 4.462,
       "range": 4,
       "name": "light copy copy copy"
     },
     {
       "type": "cube",
       "dimensions": [
-        1,
-        0.5,
-        0.1
+        0.8,
+        1.2,
+        0.7
       ],
       "material": {
-        "color": "#607d8b"
+        "color": "#992dd9"
       },
       "position": [
-        -0.9,
-        0.225,
-        0
+        -1.1,
+        0.3,
+        0.1
       ],
       "orientation": [
+        -0.7854,
         0,
-        0,
-        0
+        0.7854
       ],
-      "name": "wall",
+      "name": "Normal Wall",
       "castShadow": true,
       "mass": 0,
-      "immovable": true
+      "immovable": true,
+      "collision": "auto"
     },
     {
       "type": "cube",
@@ -152,7 +153,7 @@
         "billboard": false
       },
       "attach": {
-        "parentName": "wall",
+        "parentName": "Normal Wall",
         "face": "front",
         "offset": [
           0,
@@ -508,6 +509,55 @@
       "name": "stage camera"
     },
     {
+      "type": "model",
+      "filename": "assets/bda658d030e642ca.obj",
+      "format": "stl",
+      "position": [
+        -1,
+        0,
+        1.2
+      ],
+      "scale": 0.00714286,
+      "normalize": true,
+      "nativeDimensions": [
+        16,
+        140,
+        3
+      ],
+      "orientation": [
+        -0.7854,
+        0.7854,
+        0
+      ],
+      "color": "#9aa8b6",
+      "name": "dragonslayer",
+      "castShadow": true,
+      "mass": 0.4,
+      "immovable": false,
+      "collision": "convexHull"
+    },
+    {
+      "type": "arrow",
+      "dimensions": [
+        0.8,
+        0.15,
+        0.04
+      ],
+      "color": "#f82222",
+      "position": [
+        -0.4,
+        0.9,
+        0.2
+      ],
+      "rotationY": -0.5236,
+      "orientation": [
+        -1.5708,
+        -0.5236,
+        -2.618
+      ],
+      "name": "direction arrow"
+    },
+    {
       "type": "fossbot",
       "position": [
         -0.5,
@@ -636,37 +686,46 @@
         "subtype": "point",
         "position": [
           -0.5,
-          1,
+          1.6,
           -0.1
         ],
         "rotationY": 0,
-        "color": "#fa28ff",
-        "intensity": 6.662,
+        "color": "#ffffff",
+        "intensity": 4.462,
         "range": 4,
         "angle": 0.5235987755982988,
         "penumbra": 0.3,
-        "groupId": "stage_mrcfvmxw_am2smyo"
+        "groupId": "stage_mrcfvmxw_am2smyo",
+        "hidden": false
       },
       {
         "id": "stage_mrcfqlqf_f0chas0",
         "kind": "cube",
         "semanticKind": "wall",
-        "name": "wall",
+        "name": "Normal Wall",
         "position": [
-          -0.9,
-          0.225,
-          0
+          -1.1,
+          0.3,
+          0.1
         ],
         "rotationY": 0,
         "dimensions": [
-          1,
-          0.5,
-          0.1
+          0.8,
+          1.2,
+          0.7
         ],
-        "color": "#607d8b",
+        "color": "#992dd9",
         "mass": 0,
         "immovable": true,
-        "groupId": "stage_mrcfvmxw_am2smyo"
+        "groupId": "stage_mrcfvmxw_am2smyo",
+        "hidden": false,
+        "locked": false,
+        "collision": "auto",
+        "orientation": [
+          -0.7854,
+          0,
+          0.7854
+        ]
       },
       {
         "id": "stage_mrcfrd29_4j32r02",
@@ -1059,6 +1118,60 @@
         "rotationY": 1.014559894184304,
         "pitch": 0.5433209961458348,
         "fov": 50
+      },
+      {
+        "id": "stage_mrci1250_lcv9wke",
+        "kind": "model",
+        "semanticKind": "customObject",
+        "name": "dragonslayer",
+        "filename": "assets/bda658d030e642ca.obj",
+        "format": "stl",
+        "originalFileName": "dragonslayer.stl",
+        "position": [
+          -1,
+          0,
+          1.2
+        ],
+        "rotationY": 0.7854,
+        "scale": 0.00714286,
+        "normalize": true,
+        "nativeDimensions": [
+          16,
+          140,
+          3
+        ],
+        "color": "#9aa8b6",
+        "mass": 0.4,
+        "immovable": false,
+        "collision": "convexHull",
+        "orientation": [
+          -0.7854,
+          0.7854,
+          0
+        ]
+      },
+      {
+        "id": "stage_mrci55yh_a60hhw2",
+        "kind": "arrow",
+        "semanticKind": "directionArrow",
+        "name": "direction arrow",
+        "position": [
+          -0.4,
+          0.9,
+          0.2
+        ],
+        "rotationY": -0.5236,
+        "dimensions": [
+          0.8,
+          0.15,
+          0.04
+        ],
+        "color": "#f82222",
+        "orientation": [
+          -1.5708,
+          -0.5236,
+          -2.618
+        ]
       }
     ]
   }
