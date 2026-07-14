@@ -3,7 +3,7 @@
   "title": "Demo",
   "description": "Demo stage showcasing all capabilities.",
   "createdAt": "2026-07-08T18:51:54.734Z",
-  "updatedAt": "2026-07-14T08:51:46.881Z",
+  "updatedAt": "2026-07-14T08:55:49.631Z",
   "config": [
     {
       "type": "skybox",
@@ -556,6 +556,76 @@
         -2.618
       ],
       "name": "direction arrow"
+    },
+    {
+      "type": "cube",
+      "dimensions": [
+        1,
+        0.5,
+        0.1
+      ],
+      "material": {
+        "color": "#cccccc"
+      },
+      "position": [
+        0.7,
+        0.2,
+        -1
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "name": "wall copy copy",
+      "castShadow": true,
+      "mass": 2.5,
+      "immovable": false
+    },
+    {
+      "type": "text",
+      "text": "Movable Wall 2",
+      "position": [
+        0,
+        0.02,
+        0
+      ],
+      "color": "#ffffff",
+      "scale": 0.75,
+      "onFloor": false,
+      "attachment": {
+        "parentId": "stage_mrkf1p6r_kvca4w5",
+        "face": "front",
+        "offset": [
+          0,
+          0
+        ],
+        "rotation": 0,
+        "billboard": false
+      },
+      "attach": {
+        "parentName": "wall copy copy",
+        "face": "front",
+        "offset": [
+          0,
+          0
+        ],
+        "rotation": 0
+      },
+      "style": {
+        "backgroundVisible": false,
+        "backgroundSize": [
+          0.75,
+          0.24
+        ],
+        "backgroundColor": "#ffffff",
+        "backgroundOpacity": 0.9,
+        "borderVisible": false,
+        "borderColor": "#0f172a",
+        "borderWidth": 8,
+        "fontSize": 56
+      },
+      "name": "text label copy copy"
     },
     {
       "type": "fossbot",
@@ -1172,6 +1242,65 @@
           -0.5236,
           -2.618
         ]
+      },
+      {
+        "id": "stage_mrkf1p6r_kvca4w5",
+        "kind": "cube",
+        "semanticKind": "wall",
+        "name": "wall copy copy",
+        "position": [
+          0.7,
+          0.2,
+          -1
+        ],
+        "rotationY": 0,
+        "dimensions": [
+          1,
+          0.5,
+          0.1
+        ],
+        "color": "#cccccc",
+        "mass": 2.5,
+        "immovable": false
+      },
+      {
+        "id": "stage_mrkf1p6r_4qa7qmm",
+        "kind": "text",
+        "semanticKind": "label",
+        "name": "text label copy copy",
+        "text": "Movable Wall 2",
+        "position": [
+          0,
+          0.02,
+          0
+        ],
+        "color": "#ffffff",
+        "scale": 0.75,
+        "onFloor": false,
+        "style": {
+          "backgroundVisible": false,
+          "backgroundSize": [
+            0.75,
+            0.24
+          ],
+          "backgroundColor": "#ffffff",
+          "backgroundOpacity": 0.9,
+          "borderVisible": false,
+          "borderColor": "#0f172a",
+          "borderWidth": 8,
+          "fontSize": 56
+        },
+        "parentId": "stage_mrkf1p6r_kvca4w5",
+        "attachment": {
+          "parentId": "stage_mrkf1p6r_kvca4w5",
+          "face": "front",
+          "offset": [
+            0,
+            0
+          ],
+          "rotation": 0,
+          "billboard": false
+        }
       }
     ]
   }
