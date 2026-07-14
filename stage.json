@@ -3,7 +3,7 @@
   "title": "Demo",
   "description": "Demo stage showcasing all capabilities.",
   "createdAt": "2026-07-08T18:51:54.734Z",
-  "updatedAt": "2026-07-08T20:01:18.788Z",
+  "updatedAt": "2026-07-14T08:51:46.881Z",
   "config": [
     {
       "type": "skybox",
@@ -540,13 +540,13 @@
       "type": "arrow",
       "dimensions": [
         0.8,
-        0.15,
+        0.1,
         0.04
       ],
       "color": "#f82222",
       "position": [
-        -0.4,
-        0.9,
+        -0.2,
+        1.2,
         0.2
       ],
       "rotationY": -0.5236,
@@ -1156,14 +1156,14 @@
         "semanticKind": "directionArrow",
         "name": "direction arrow",
         "position": [
-          -0.4,
-          0.9,
+          -0.2,
+          1.2,
           0.2
         ],
         "rotationY": -0.5236,
         "dimensions": [
           0.8,
-          0.15,
+          0.1,
           0.04
         ],
         "color": "#f82222",
