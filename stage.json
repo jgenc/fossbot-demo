@@ -3,7 +3,7 @@
   "title": "Demo",
   "description": "Demo stage showcasing all capabilities.",
   "createdAt": "2026-07-08T18:51:54.734Z",
-  "updatedAt": "2026-07-14T08:55:49.631Z",
+  "updatedAt": "2026-07-14T14:37:38.614Z",
   "config": [
     {
       "type": "skybox",
@@ -568,9 +568,9 @@
         "color": "#cccccc"
       },
       "position": [
-        0.7,
+        1.4,
         0.2,
-        -1
+        0.1
       ],
       "orientation": [
         0,
@@ -1249,9 +1249,9 @@
         "semanticKind": "wall",
         "name": "wall copy copy",
         "position": [
-          0.7,
+          1.4,
           0.2,
-          -1
+          0.1
         ],
         "rotationY": 0,
         "dimensions": [
